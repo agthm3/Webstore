@@ -4,13 +4,14 @@
 @import "fonts";
 @import "navbar";
 
+@import "components/products";
+@import "components/breadcrumbs";
+@import "components/card";
+@import "components/categories";
 @import "pages/home";
 @import "pages/details";
 @import "pages/cart";
-@import "components/products";
 @import "pages/success";
 @import "pages/auth";
-@import "components/breadcrumbs";
-@import "components/card";
 @import "pages/dashboard";
 @import "transitions/slide-fade";
