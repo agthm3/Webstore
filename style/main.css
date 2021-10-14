@@ -11370,19 +11370,18 @@ footer p {
   color: #0c0d36;
 }
 
-.page-dashboard .section-content .dashboard-title {
+.page-dashboard .section-content .dashboard-card-title {
   font-size: 24px;
   line-height: 36px;
   /* identical to box height */
   color: #0c0d36;
 }
 
-.page-dashboard .section-content .dashboard-subtitle {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+.page-dashboard .section-content .dashboard-card-subtitle {
+  font-weight: 600;
+  font-size: 32px;
   /* identical to box height */
-  color: #9191a9;
+  color: #0c0d36;
 }
 
 .slide-fade-enter-active {
