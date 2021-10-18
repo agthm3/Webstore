@@ -10969,6 +10969,15 @@ footer p {
   color: #0c0d36;
 }
 
+.card {
+  background: #fefefe;
+  -webkit-box-shadow: 8px 4px 15px #f1f1f8;
+          box-shadow: 8px 4px 15px #f1f1f8;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none !important;
+}
+
 .component-categories {
   background: #f4f4f4;
   border-radius: 8px;
