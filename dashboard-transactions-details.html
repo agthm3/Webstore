@@ -33,13 +33,13 @@
             </a>
             <a
               href="/dashboard-products.html"
-              class="list-group-item list-group-item-action active"
+              class="list-group-item list-group-item-action"
             >
               My Product
             </a>
             <a
               href="/dashboard-transaction.html"
-              class="list-group-item list-group-item-action"
+              class="list-group-item list-group-item-action active"
             >
               Transactions
             </a>
@@ -146,76 +146,37 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Create New Product</h2>
-                <p class="dashboard-subtitle">Create your own product</p>
+                <h2 class="dashboard-title">#STORE0839</h2>
+                <p class="dashboard-subtitle">Transactions / Details</p>
               </div>
 
-              <div class="dashboard-content">
+              <div class="dashboard-content" id="transactionDetails">
                 <div class="row">
                   <div class="col-12">
-                    <form action="">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label>Nama Toko</label>
-                                <input type="text" class="form-control" />
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label>Price</label>
-                                <input type="number" class="form-control" />
-                              </div>
-                            </div>
-
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label>Description</label>
-                                <textarea name="editor"></textarea>
-                              </div>
-                            </div>
-
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label>Kategori</label>
-                                <select
-                                  name="category"
-                                  class="form-control"
-                                  id=""
-                                >
-                                  <option value="" disable>
-                                    Select Category
-                                  </option>
-                                </select>
-                              </div>
-                            </div>
-
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label>Thumbnails</label>
-                                <input type="file" class="form-control" />
-                                <p class="text-mude">
-                                  Kamu dapat memilih lebih dari satu file
-                                </p>
-                              </div>
-                            </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-12 col-md-4">
+                            <img
+                              src="/images/product-details-dashboard.png"
+                              class="w-100 mb-3"
+                              alt=""
+                            />
                           </div>
 
-                          <div class="row">
-                            <div class="col text-right">
-                              <button
-                                type="submit"
-                                class="btn btn-success px-5"
-                              >
-                                Save Now
-                              </button>
+                          <div class="col-12 col-md-8">
+                            <div class="row">
+                              <div class="col-12 col-md-6">
+                                <div class="product-title">Customer Name</div>
+                                <div class="product-subtitle">
+                                  Andi Gigatera
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -239,9 +200,16 @@
         $("#wrapper").toggleClass("toggled");
       });
     </script>
-    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+
+    <script src="/vendor/vue/vue.js"></script>
     <script>
-      CKEDITOR.replace("editor");
+      var transactionDetails = new vue({
+        el: "#transactionDetails",
+        data: {
+          status: "SHIPPING",
+          resi: "JNE20839149021029301231",
+        },
+      });
     </script>
   </body>
 </html>

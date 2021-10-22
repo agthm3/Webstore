@@ -146,8 +146,8 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Create New Product</h2>
-                <p class="dashboard-subtitle">Create your own product</p>
+                <h2 class="dashboard-title">Shirup Marzan</h2>
+                <p class="dashboard-subtitle">Product Details</p>
               </div>
 
               <div class="dashboard-content">
@@ -159,21 +159,18 @@
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label>Nama Toko</label>
-                                <input type="text" class="form-control" />
+                                <label>Product Name</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="Shirup Marzan"
+                                />
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label>Price</label>
                                 <input type="number" class="form-control" />
-                              </div>
-                            </div>
-
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label>Description</label>
-                                <textarea name="editor"></textarea>
                               </div>
                             </div>
 
@@ -194,11 +191,8 @@
 
                             <div class="col-md-12">
                               <div class="form-group">
-                                <label>Thumbnails</label>
-                                <input type="file" class="form-control" />
-                                <p class="text-mude">
-                                  Kamu dapat memilih lebih dari satu file
-                                </p>
+                                <label>Description</label>
+                                <textarea name="editor"></textarea>
                               </div>
                             </div>
                           </div>
@@ -207,15 +201,79 @@
                             <div class="col text-right">
                               <button
                                 type="submit"
-                                class="btn btn-success px-5"
+                                class="btn btn-success px-5 btn-block"
                               >
-                                Save Now
+                                Update Product
                               </button>
                             </div>
                           </div>
                         </div>
                       </div>
                     </form>
+                  </div>
+                </div>
+
+                <div class="row mt-2">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="gallery-container">
+                              <img
+                                src="/images/product-card-1.png"
+                                class="w-100"
+                                alt=""
+                              />
+                              <a href="#" class="delete-gallery">
+                                <img src="/images/icon-delete.svg" alt="" />
+                              </a>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="gallery-container">
+                              <img
+                                src="/images/product-card-2.png"
+                                class="w-100"
+                                alt=""
+                              />
+                              <a href="#" class="delete-gallery">
+                                <img src="/images/icon-delete.svg" alt="" />
+                              </a>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="gallery-container">
+                              <img
+                                src="/images/product-card-3.png"
+                                class="w-100"
+                                alt=""
+                              />
+                              <a href="#" class="delete-gallery">
+                                <img src="/images/icon-delete.svg" alt="" />
+                              </a>
+                            </div>
+                          </div>
+
+                          <div class="col-12 mt-2">
+                            <input
+                              type="file"
+                              id="file"
+                              style="display: none"
+                              multiple
+                            />
+                            <button
+                              class="btn btn-secondary btn-block"
+                              onclick="thisFileUpload()"
+                            >
+                              Add Photo
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -242,6 +300,12 @@
     <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <script>
       CKEDITOR.replace("editor");
+    </script>
+
+    <script>
+      function thisFileUpload() {
+        document.getElementById("file").click();
+      }
     </script>
   </body>
 </html>
