@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Sehat Ku</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="page-dashboard">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card pop-up-login" id="NonLogin">
+            <div class="row">
+              <div class="col-lg-12">
+                <a href="sehatku-login.html">
+                  <img
+                    src="/images/arrow.png"
+                    style="position: absolute; margin-left: -230px"
+                /></a>
+                <a href="#">
+                  <img
+                    src="/images/user-icon.png"
+                    style="
+                      position: absolute;
+                      margin-top: -80px;
+                      margin-left: -80px;
+                    "
+                /></a>
+              </div>
+            </div>
+            <div class="row"></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <form action="" class="col-lg-12 form-username text-center">
+                    <div class="row" style="margin-top: 40px">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Masukkan Username</label>
+                        </div>
+                        <input
+                          type="text"
+                          placeholder="Valey Christian"
+                          class="form-control w-75"
+                        />
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Jenis Kelamin</label>
+                        </div>
+                        <input
+                          type="text"
+                          placeholder="Laki-laki"
+                          class="form-control w-75"
+                        />
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label>Umur</label>
+                        </div>
+                        <input
+                          type="text"
+                          placeholder="42 Tahun"
+                          class="form-control w-75"
+                        />
+                      </div>
+                    </div>
+                    <a
+                      href="#"
+                      class="btn btn-next btn-block w-75 mt-4 text-center"
+                      style="margin-top: 100px"
+                    >
+                      <p onclick="LoginDone()">Login</p>
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card pop-up-login" style="display: none" id="data-diri">
+            <div class="row">
+              <div class="col-lg-12">
+                <a href="sehatku-login.html">
+                  <img
+                    src="/images/arrow.png"
+                    style="position: absolute; margin-left: -230px"
+                /></a>
+                <a href="#">
+                  <img
+                    src="/images/akun-saya.png"
+                    style="
+                      position: absolute;
+                      margin-top: 10px;
+                      margin-left: -100px;
+                      margin-bottom: 10px;
+                    "
+                /></a>
+              </div>
+            </div>
+            <div class="row"></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <form action="" class="col-lg-12 form-username text-center">
+                    <div class="row col-lg-12" style="margin-top: 80px">
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label>Nama :</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <label>Valey Christian</label>
+                      </div>
+                    </div>
+
+                    <div class="row col-lg-12 mt-3">
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label>Umur :</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <label>42 Tahun</label>
+                      </div>
+                    </div>
+
+                    <div class="row col-lg-12 mt-3">
+                      <div class="col-lg-7">
+                        <div class="form-group">
+                          <label style="font-size: 25px">Jenis Kelamin :</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <label>Laki-laki</label>
+                      </div>
+                    </div>
+
+                    <a
+                      href="sehatku-loginDone.html"
+                      class="btn btn-next btn-block w-75 mt-4 text-center"
+                      style="margin-top: 100px"
+                      id="Finish"
+                    >
+                      <p onclick="loginFinish()">Login</p>
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex" id="wrapper" data-aos="fade-right">
+        <!--Page Content-->
+        <div id="page-content-wrapper">
+          <!--Section Content-->
+          <div class="row">
+            <div class="col-lg-6">
+              <img
+                src="/images/kkri-logo.png"
+                style="margin-top: 30px; margin-left: 30px"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-lg-6 text-center mt-4"
+              id="MyAccButton"
+              style="display: none"
+            >
+              <a href="#"
+                ><img
+                  style="position: absolute"
+                  src="/images/acc-button.png"
+                  alt=""
+                  onclick="AkunSaya()"
+              /></a>
+            </div>
+          </div>
+
+          <div class="dashboard-content">
+            <div class="row">
+              <div class="col-lg-7 text-center">
+                <img class="mb-5" src="/images/sehatku-logo.png" alt="" />
+                <div class="row">
+                  <div class="col-lg-3">
+                    <a href="#"
+                      ><img
+                        src="/images/konsultasi-logo.png"
+                        onclick="nonLogin()"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-lg-3">
+                    <a href="#">
+                      <img
+                        onclick="nonLogin()"
+                        src="/images/janji-temu.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="col-lg-3">
+                    <a href="#"
+                      ><img
+                        onclick="nonLogin()"
+                        src="/images/daftar-harga.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="col-lg-3">
+                    <a href="#"
+                      ><img
+                        onclick="nonLogin()"
+                        src="/images/stok-obat.png"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-12 mt-5 mb-5">
+                    <img src="/images/teks-awal.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="row mb-4 text-center">
+                  <div class="col-lg-12"></div>
+
+                  <div class="col-lg-12">
+                    <a href="#" class="card mt-3 btn-login" id="buttonAcc">
+                      <div class="card-body">
+                        <img src="/images/buat-akun-teks.png" alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <img src="/images/dokter-images.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      function loginFinish() {
+        var x = document.getElementById("Finish");
+        var y = document.getElementById("buttonAcc");
+        var z = document.getElementById("data-diri");
+        var xy = document.getElementById("MyAccButton");
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "none";
+        xy.style.display = "block";
+      }
+    </script>
+    <script>
+      function LoginDone() {
+        var y = document.getElementById("data-diri");
+        var x = document.getElementById("NonLogin");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          y.style.display = "block";
+          x.style.display = "none";
+        }
+      }
+    </script>
+    <script>
+      function nonLogin() {
+        document.getElementById("hasil").innerHTML =
+          "<h3>Buat Akun Anda Terlebih Dahulu</h3>";
+      }
+    </script>
+    <script>
+      function AkunSaya() {
+        var x = document.getElementById("data-diri");
+
+        x.style.display = "block";
+      }
+    </script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+  </body>
+</html>

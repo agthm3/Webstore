@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Sehat Ku</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="page-dashboard">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card pop-up-login">
+            <div class="row">
+              <div class="col-lg-12">
+                <a href="#">
+                  <img
+                    src="/images/arrow.png"
+                    style="position: absolute; margin-left: -230px"
+                /></a>
+                <a href="#">
+                  <img
+                    src="/images/user-icon.png"
+                    style="
+                      position: absolute;
+                      margin-top: -80px;
+                      margin-left: -80px;
+                    "
+                /></a>
+              </div>
+            </div>
+            <div class="row"></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <form action="" class="col-lg-12 form-login text-center">
+                    <div class="row" style="margin-top: 100px">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label>Email Address</label>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <input
+                          type="email"
+                          placeholder="valeyllow@gmail.com"
+                          class="form-control w-75"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <label>Password</label>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <input
+                          type="password"
+                          placeholder="*********"
+                          class="form-control w-75"
+                        />
+                      </div>
+                    </div>
+
+                    <a
+                      href="/sehatku-username.html"
+                      class="btn btn-next btn-block w-75 mt-4 text-center"
+                      style="margin-top: 100px"
+                    >
+                      <p>Next</p>
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex" id="wrapper" data-aos="fade-right">
+        <!--Page Content-->
+        <div id="page-content-wrapper">
+          <!--Section Content-->
+          <div class="row">
+            <div class="col-lg-12">
+              <img
+                src="/images/kkri-logo.png"
+                style="margin-top: 30px; margin-left: 30px"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="dashboard-content">
+            <div class="row">
+              <div class="col-lg-7 text-center">
+                <img class="mb-5" src="/images/sehatku-logo.png" alt="" />
+                <div class="row">
+                  <div class="col-lg-3">
+                    <a href="#"
+                      ><img
+                        src="/images/konsultasi-logo.png"
+                        onclick="nonLogin()"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-lg-3">
+                    <a href="#">
+                      <img
+                        onclick="nonLogin()"
+                        src="/images/janji-temu.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="col-lg-3">
+                    <a href="#"
+                      ><img
+                        onclick="nonLogin()"
+                        src="/images/daftar-harga.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="col-lg-3">
+                    <a href="#"
+                      ><img
+                        onclick="nonLogin()"
+                        src="/images/stok-obat.png"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-12 mt-5 mb-5">
+                    <img src="/images/teks-awal.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="row mb-4 text-center">
+                  <div class="col-lg-12"></div>
+
+                  <div class="col-lg-12">
+                    <a href="#" class="card mt-3 btn-login">
+                      <div class="card-body">
+                        <img src="/images/buat-akun-teks.png" alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <img src="/images/dokter-images.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--           
+          <div
+            class="section-content section-dashboard-home"
+            data-aos="fade-up"
+            style="margin-top: 100px"
+          >
+            <div class="container-fluid">
+              <div class="dashboard-heading">
+                <h2 class="dashboard-title">Dashboard</h2>
+                <p class="dashboard-subtitle">Look what you have made today!</p>
+
+                <div class="dashboard-content">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card mb-2">
+                        <div class="card-body">
+                          <div class="dashboard-card-title">Customer</div>
+                          <div class="dashboard-card-subtitle">15,299</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card mb-2">
+                        <div class="card-body">
+                          <div class="dashboard-card-title">Revenue</div>
+                          <div class="dashboard-card-subtitle">$921,298</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card mb-2">
+                        <div class="card-body">
+                          <div class="dashboard-card-title">Transaction</div>
+                          <div class="dashboard-card-subtitle">22.409.399</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-3">
+                    <div class="col-12 mt-2">
+                      <h5 class="mb-3">Recent Transaction</h5>
+
+                      <a
+                        href="/dashboard-transactions-details.html"
+                        class="card card-list d-block"
+                      >
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-1">
+                              <img
+                                src="/images/dashboard-icon-product-1.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="col-md-4">Shirup Marzzan</div>
+                            <div class="col-md-3">Angga Risky</div>
+                            <div class="col-md-3">12 Januari, 2020</div>
+                            <div class="col-md-1 d-none d-md-block">
+                              <img
+                                src="/images/dashboard-arrow-right.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a
+                        href="/dashboard-transactions-details.html"
+                        class="card card-list d-block"
+                      >
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-1">
+                              <img
+                                src="/images/dashboard-icon-product-2.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="col-md-4">LeBrone X</div>
+                            <div class="col-md-3">Masayoshi</div>
+                            <div class="col-md-3">11 January, 2020</div>
+                            <div class="col-md-1 d-none d-md-block">
+                              <img
+                                src="/images/dashboard-arrow-right.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a
+                        href="/dashboard-transactions-details.html"
+                        class="card card-list d-block"
+                      >
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-1">
+                              <img
+                                src="/images/dashboard-icon-product-3.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="col-md-4">Soffa Lembutte</div>
+                            <div class="col-md-3">Shayna</div>
+                            <div class="col-md-3">11 January, 2020</div>
+                            <div class="col-md-1 d-none d-md-block">
+                              <img
+                                src="/images/dashboard-arrow-right.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      function nonLogin() {
+        document.getElementById("hasil").innerHTML =
+          "<h3>Buat Akun Anda Terlebih Dahulu</h3>";
+      }
+    </script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+  </body>
+</html>

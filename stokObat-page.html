@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Sehat Ku</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://w2ui.com/src/w2ui-1.4.2.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="page-dashboard">
+      <div class="d-flex" id="wrapper" data-aos="fade-right">
+        <!--Page Content-->
+        <div id="page-content-wrapper">
+          <!--Section Content-->
+
+          <div class="dashboard-content">
+            <div class="row">
+              <div class="col-lg-4">
+                <a
+                  ><img
+                    src="/images/sehatku-logo.png"
+                    style="margin-left: 20px"
+                    width="80%"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="col-lg-2">
+                <a href="#">
+                  <img
+                    src="/images/konsultasi-non.png"
+                    style="margin-top: 30px"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div class="col-lg-2">
+                <a href="#">
+                  <img
+                    src="/images/janjiTemu-non.png"
+                    style="margin-top: 30px"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="col-lg-2">
+                <a href="#">
+                  <img
+                    src="/images/daftarHarga-non.png"
+                    style="margin-top: 30px"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div class="col-lg-2">
+                <a href="#">
+                  <img
+                    src="/images/stokObat-active.png"
+                    style="margin-top: 30px"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+
+            <div class="row text-center">
+              <div class="col-lg-4">
+                <img
+                  class="btn popup_image"
+                  style="margin-top: 30px"
+                  src="/images/antibiotik-card.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-lg-4">
+                <img
+                  style="margin-top: 30px"
+                  src="/images/amoxilin-card.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-lg-4">
+                <img
+                  style="margin-top: 30px"
+                  src="/images/curcuma-card.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-lg-4 mt-3">
+                <img
+                  style="margin-top: 30px"
+                  src="/images/asam-card.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-lg-4 mt-3">
+                <img
+                  style="margin-top: 30px"
+                  src="/images/insto-card.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-lg-4 mt-3" style="margin-bottom: 100px">
+                <img
+                  src="/images/paracetamol-card.png"
+                  style="margin-top: 30px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup_image").on("click", function () {
+          w2popup.open({
+            title: "Image",
+            body:
+              '<div class="w2ui-centered"><img src="' +
+              $(this).attr("src") +
+              '"   ></img></div>',
+          });
+        });
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="http://w2ui.com/src/w2ui-1.4.2.min.js"
+    ></script>
+  </body>
+</html>

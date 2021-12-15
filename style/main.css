@@ -4,7 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10820,7 +10820,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
 }
 
 .page-content {
@@ -10837,7 +10837,10 @@ footer p {
 }
 
 .form-control {
-  background-color: #f3f3f3;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  outline: none;
 }
 
 .navbar-store {
@@ -11274,6 +11277,10 @@ footer p {
 }
 
 .page-auth .section-store-auth .form-control {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  outline: none;
   border-radius: 8px;
   background: #f3f3f3;
 }
@@ -11319,8 +11326,9 @@ footer p {
 }
 
 .page-dashboard #page-content-wrapper {
-  background: #f5f5fb;
+  background: #336198;
   min-width: 100vw;
+  position: relative;
 }
 
 .page-dashboard #sidebar-wrapper {
@@ -11338,6 +11346,78 @@ footer p {
 
 .page-dashboard #sidebar-wrapper .list-group {
   width: 15rem;
+}
+
+.page-dashboard .pop-up-login {
+  width: 466px;
+  height: 507px !important;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  border-radius: 40px;
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 90px;
+  text-align: center;
+  z-index: 8;
+}
+
+.page-dashboard .konsultasi-card {
+  margin-left: 400px;
+}
+
+.page-dashboard .form-login {
+  position: absolute;
+  z-index: 9;
+}
+
+.page-dashboard .form-username {
+  position: absolute;
+  z-index: 9;
+}
+
+.page-dashboard .form-username .form-control {
+  width: 200px !important;
+  margin-left: 100px;
+}
+
+.page-dashboard .btn-next {
+  background-color: #0acdf8;
+  width: 80px !important;
+  height: 30px !important;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 60px;
+  margin-bottom: 30px;
+  margin-left: 150px;
+  margin-top: 400px;
+}
+
+.page-dashboard .btn-next p {
+  margin-bottom: 90px;
+  font-weight: bold;
+  color: white;
+  margin-top: -5px;
+}
+
+.page-dashboard .btn-login {
+  border-radius: 30px !important;
+  background-color: #03a9f4;
+  color: red;
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  font-size: x-large;
+  width: 300px;
+  height: 50px;
+  border-color: 1px white;
+  margin-left: 350px;
+}
+
+.page-dashboard .btn-login img {
+  margin-bottom: 60px;
+  margin-top: -9px;
 }
 
 .page-dashboard #wrapper.toggled #sidebar-wrapper {
