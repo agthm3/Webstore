@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://w2ui.com/src/w2ui-1.4.2.min.css"
+    />
+  </head>
+  <body>
+
+
+<img class="btn popup_image" style="width:100px; height:100px; border-radius:4px;" src="http://lorempixel.com/g/200/200/"></img>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+  $(".popup_image").on('click', function() {
+    w2popup.open({
+      title: 'Image',
+      body: '<div class="w2ui-centered"><img src="' + $(this).attr('src') + '"></img></div>'
+    });
+  });
+
+});
+
+    </script>
+    <script
+      type="text/javascript"
+      src="http://w2ui.com/src/w2ui-1.4.2.min.js"
+    ></script>
+  </body>
+</html>

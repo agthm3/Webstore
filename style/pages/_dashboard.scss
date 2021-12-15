@@ -1,7 +1,8 @@
 .page-dashboard {
   #page-content-wrapper {
-    background: #f5f5fb;
+    background: #336198;
     min-width: 100vw;
+    position: relative;
   }
 
   #sidebar-wrapper {
@@ -17,6 +18,74 @@
 
     .list-group {
       width: 15rem;
+    }
+  }
+
+  .pop-up-login {
+    width: 466px;
+    height: 507px !important;
+    background: rgba(black, 0.5);
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    border-radius: 40px;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 90px;
+    text-align: center;
+    z-index: 8;
+  }
+  .konsultasi-card {
+    margin-left: 400px;
+  }
+  .form-login {
+    position: absolute;
+    z-index: 9;
+  }
+
+  .form-username {
+    position: absolute;
+    z-index: 9;
+    .form-control {
+      width: 200px !important;
+      margin-left: 100px;
+    }
+  }
+
+  .btn-next {
+    background-color: #0acdf8;
+    width: 80px !important;
+    height: 30px !important;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 60px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-top: 400px;
+    p {
+      margin-bottom: 90px;
+      font-weight: bold;
+      color: white;
+      margin-top: -5px;
+    }
+  }
+
+  .btn-login {
+    border-radius: 30px !important;
+    background-color: #03a9f4;
+    color: red;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    font-size: x-large;
+    width: 300px;
+    height: 50px;
+    border-color: 1px white;
+    margin-left: 350px;
+
+    img {
+      margin-bottom: 60px;
+      margin-top: -9px;
     }
   }
 
