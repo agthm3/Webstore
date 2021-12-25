@@ -10828,16 +10828,19 @@ body {
 }
 
 footer {
-  border-top: 1px solid #e4e4e4;
-  margin-top: 150px;
+  border-top: 1px solid #003399;
+}
+
+footer .footer-dallah {
+  background: #003399;
 }
 
 footer p {
-  color: #979797;
+  color: #ffffff;
 }
 
 .form-control {
-  background-color: #f3f3f3;
+  background-color: #262e92;
 }
 
 .navbar-store {
@@ -10943,13 +10946,13 @@ footer p {
 }
 
 .store-breadcrumbs a {
-  color: #979797;
+  color: #ff0000;
 }
 
 .card {
-  background: #fefefe;
-  -webkit-box-shadow: 0px 4px 15px #f1f1f8;
-          box-shadow: 0px 4px 15px #f1f1f8;
+  background: #000066;
+  -webkit-box-shadow: 0px 4px 15px #000099;
+          box-shadow: 0px 4px 15px #000099;
   border-radius: 8px;
   border: none;
   text-decoration: none !important;
@@ -10970,12 +10973,15 @@ footer p {
 }
 
 .card {
-  background: #fefefe;
-  -webkit-box-shadow: 8px 4px 15px #f1f1f8;
-          box-shadow: 8px 4px 15px #f1f1f8;
+  background: #000066;
+  -webkit-box-shadow: 8px 4px 15px #000099;
+          box-shadow: 8px 4px 15px #000099;
   border-radius: 8px;
   border: none;
   text-decoration: none !important;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .component-categories {
@@ -11318,9 +11324,16 @@ footer p {
           box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
 }
 
+@media screen and (max-widht: 600px) {
+  .dekstop-version {
+    background: red !important;
+  }
+}
+
 .page-dashboard #page-content-wrapper {
-  background: #f5f5fb;
-  min-width: 100vw;
+  background: #262e92;
+  width: 100%;
+  height: 100%;
 }
 
 .page-dashboard #sidebar-wrapper {
@@ -11402,7 +11415,15 @@ footer p {
   font-size: 18px;
   line-height: 27px;
   /* identical to box height */
-  color: #0c0d36;
+  color: #ffffff;
+}
+
+.page-dashboard .section-content h6 {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #ffffff;
 }
 
 .page-dashboard .section-content .dashboard-card-title {
